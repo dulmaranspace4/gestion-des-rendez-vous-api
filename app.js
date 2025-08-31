@@ -5,6 +5,6 @@ const utilisateurRoutes = require('./routes/utilisateur');
 const app = express();
 
 app.use('/api/rendezvous', rendezvousRoutes);
-app.use('/api/utilisateur', utilisateurRoutes); // Changed 'utilisateurs' to 'utilisateur'
+app.use('/api/utilisateur', utilisateurRoutes); // Changed 'utilisateurs' to 'utilisateur' for consistency
 
 module.exports = app;
