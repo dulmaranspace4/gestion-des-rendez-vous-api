@@ -5,6 +5,6 @@ const utilisateurRoutes = require('./routes/utilisateur');
 const app = express();
 
 app.use('/api/rendezvous', rendezvousRoutes);
-app.use('/api/utilisateur', utilisateurRoutes); // Changed 'utilisateurs' to 'utilisateur' for consistency
+app.use('/api/utilisateur', utilisateurRoutes); // Consistent naming for user routes
 
 module.exports = app;
