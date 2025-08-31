@@ -11,11 +11,11 @@ app.use(bodyParser.json());
 const PORT = process.env.PORT || 3000;
 
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('Connecté à la base de données MongoDB'))
-  .catch(err => console.error('Erreur de connexion à MongoDB', err));
+  .then(() => console.log('Connected to MongoDB database'))
+  .catch(err => console.error('Error connecting to MongoDB', err));
 
-// Routes (à définir)
+// Routes (to be defined)
 
 app.listen(PORT, () => {
-  console.log(`Serveur démarré sur le port ${PORT}`);
+  console.log(`Server started on port ${PORT}`);
 });
