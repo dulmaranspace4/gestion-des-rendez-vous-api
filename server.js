@@ -14,6 +14,11 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
   .then(() => console.log('Connected to MongoDB database'))
   .catch(err => console.error('Error connecting to MongoDB', err));
 
+// Health check route
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'OK' });
+});
+
 // Routes (to be defined)
 
 app.listen(PORT, () => {
